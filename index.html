@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>बिजली बिल कैलकुलेटर</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>बिजली बिल कैलकुलेटर</h1>
+    <div class="input-group">
+      <label for="totalReading">कुल रीडिंग (यूनिट)</label>
+      <input type="number" id="totalReading" placeholder="कुल यूनिट दर्ज करें">
+
+      <label for="totalBill">कुल बिल (₹)</label>
+      <input type="number" id="totalBill" placeholder="कुल राशि दर्ज करें">
+
+      <label for="person2Reading">व्यक्ति 2 की रीडिंग (यूनिट)</label>
+      <input type="number" id="person2Reading" placeholder="व्यक्ति 2 का मीटर यूनिट">
+
+      <label for="motor1">व्यक्ति 1 का मोटर यूनिट</label>
+      <input type="number" id="motor1" placeholder="व्यक्ति 1 का मोटर यूनिट">
+
+      <label for="motor2">व्यक्ति 2 का मोटर यूनिट</label>
+      <input type="number" id="motor2" placeholder="व्यक्ति 2 का मोटर यूनिट">
+
+      <button onclick="calculateBill()">कैलकुलेट करें</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
